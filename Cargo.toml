@@ -1,0 +1,19 @@
+[package]
+name = "ben94z_visualizer"
+version = "1.0.3"
+edition = "2021"
+description = "BEN94Z: audio-reactive 3D music visualizer and screensaver"
+
+[[bin]]
+name = "BEN94Z"
+path = "src/main.rs"
+
+[dependencies]
+macroquad = "0.4"
+cpal = "0.15"
+rustfft = "6"
+rand = "0.8"
+
+[profile.release]
+opt-level = 3
+strip = true
